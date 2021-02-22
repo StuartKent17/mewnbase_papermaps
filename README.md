@@ -13,7 +13,6 @@ From the [Releases page (Just the JAR file)](https://github.com/StuartKent17/mew
 2. Edit `config.json` in the main directory. Add: `"game/papermaps.jar"`
 
 Your config.json should now look like, the order matters as we are overriding a singular file:
-
     
         "classPath": [
             "game/papermaps.jar",
@@ -22,3 +21,11 @@ Your config.json should now look like, the order matters as we are overriding a 
     
 ## Notes
 This method of loading mods can be abused to run code that can damage your computer. Only install from reputable sites.
+
+
+## Building
+To build I used Krakatau
+    
+    python assemble.py -out temp temp/MiniMap.j
+
+Then use `jar cf` on the full directory (`com/....`)
